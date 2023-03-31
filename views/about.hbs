@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>{{ username }}</title>
+</head>
+<body>
+
+    <div class="modal" id="modal"></div>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="header__logo" href="/chat">
+                    <span>Hignio</span>
+                </a>
+
+                <nav class="nav">
+                    <a href="#" class="nav__link" id="link">Профиль</a>
+                    <a href="/chat" class="nav__link">Сообщения</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="profile__inner">
+            <div class="profile__avatar">
+                <img class="" src={{avatar}}>
+                <a href="#" class="btn btn-discord" id="btn-op">Написать сообщение</a>
+            </div>
+            
+
+            <div class="profile__info">
+                <div class="profile--name">{{username}}</div>
+                <div class="profile--about">id: {{id}}</div>
+               
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/about.js"></script>
+</body>
+</html>
